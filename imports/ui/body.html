@@ -1,0 +1,18 @@
+<body>
+<div class="container">
+    <header>
+        <h1>Les idées</h1>
+    </header>
+
+    <form class="new-idea">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+    </form>
+
+    <ul>
+        {{#each ideas}}
+            {{> idea}}
+        {{/each}}
+    </ul>
+</div>
+</body>
+
