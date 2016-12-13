@@ -6,6 +6,27 @@ body {
     background-color: $color-blue;
 }
 
+p {
+    font-family: 'montserrat-light';
+    font-size: 16px;
+}
+
 .logo {
     float: right;
+}
+
+.catchphrase {
+    font-family: 'montserrat-light';
+    font-size: 36px;
+    color: $white;
+
+    span {
+        font-family: 'montserrat-bold';
+    }
+}
+
+label {
+    font-family: 'brandongrotesque-bold';
+    font-size: 18px;
+    color: $white;
 }
