@@ -1,25 +1,61 @@
 <head>
-    <title>Custom User Accounts Tutorial</title>
+    <title>Idee</title>
 </head>
 
+
 <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 <div class="container">
 
     {{#if currentUser}}
-        <form class="new-idea">
-            <input type="text" name="text" placeholder="Type to add new tasks" />
-        </form>
-        <ul>
-            {{#each ideas}}
-                {{> idea}}
-            {{/each}}
-        </ul>
-        {{> settings}}
+        <header class="myprofil">
+            <img src="logo_idee.svg" alt="">
+
+            <div class="profil">
+                <img src="https://pbs.twimg.com/profile_images/808263443572789248/bH0-Kz-Y.jpg" alt="logo">
+                <span class="name">Nom</span>
+                <span class="speudo">@name</span>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">Les idées</a></li>
+                    <li><a href="">Mon compte</a></li>
+                    <li><a href="">Mes idées</a></li>
+                    <li><a href="">Mes Notifications</a></li>
+                </ul>
+            </div>
+
+            <div class="settings">
+                <ul>
+                    <li><a href="#" class="logout">Déconnexion</a></li>
+                    <li><a href="">Réglages</a></li>
+                    <li><a href="">Aide</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <form class="new-idea">
+                <input type="text" name="text" placeholder="Type to add new tasks" />
+                <input class="btn01" type="submit">
+            </form>
+
+
+            <div class="Ideas">
+                <h2>{{ideas.count}} idées</h2>
+
+                <div class="Ideas-container row">
+                    {{#each ideas}}
+                        {{> idea}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
     {{else}}
         {{> signup}}
         {{> login}}
     {{/if}}
-
 </div>
 </body>
 
@@ -49,11 +85,4 @@
         <input type="password" name="loginPassword">
         <input type="submit" value="Je me connecte">
     </form>
-</template>
-
-<template name="settings">
-  <p>Vous êtes loggué !</p>
-  <ul>
-      <li><a href="#" class="logout">Déconnexion</a></li>
-  </ul>
 </template>

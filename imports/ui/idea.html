@@ -1,9 +1,17 @@
 <template name="idea">
-    <li class="{{#if checked}}checked{{/if}}">
-        <button class="delete">&times;</button>
+    <div class="large-4  medium-12 small-12 columns">
+        <div class="Idea-card"> <!-- ici mettre le if ceest moi-->
 
-        <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+            <button class="delete">&times;</button>
 
-        <span class="text">{{text}}</span>
-    </li>
+            <img src="https://pbs.twimg.com/profile_images/808263443572789248/bH0-Kz-Y.jpg" alt="logo">
+            <span class="name">Nom</span>
+            <span class="speudo">@name</span>
+            <span class="text">{{text}}</span>
+
+            <div class="votes">
+                <span><i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i></span>
+            </div>
+        </div>
+    </div>
 </template>

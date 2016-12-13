@@ -13,5 +13,5 @@ Template.idea.events({
     },
     'click .delete'() {
         Ideas.remove(this._id);
-    },
+    }
 });
