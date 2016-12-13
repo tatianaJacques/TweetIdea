@@ -23,9 +23,18 @@ Template.body.events({
         const text = target.text.value;
 
         // Insert a task into the collection
+
+        console.log(Meteor.user());
+
         Ideas.insert({
             text,
             createdAt: new Date(), // current time
+            owner: Meteor.userId(),
+            username: Meteor.user().username,
+            profile: {
+                firstname: Meteor.user().profile.firstname,
+                lastname: Meteor.user().profile.lastname
+            }
         });
 
         // Clear form

@@ -11,14 +11,14 @@ if (Meteor.isClient) {
       var passwordVar = event.target.signupPassword.value;
 
       Accounts.createUser({
-        firstname: firstnameVar,
-        lastname: lastnameVar,
-        pseudo: pseudoVar,
+        username: pseudoVar,
         email: emailVar,
-        password: passwordVar
+        password: passwordVar,
+        profile: {
+            firstname: firstnameVar,
+            lastname: lastnameVar
+        }
       });
-
-      console.log(firstnameVar);
     }
   });
 
@@ -40,4 +40,5 @@ if (Meteor.isClient) {
       Meteor.logout();
     }
   });
+
 }
