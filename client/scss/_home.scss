@@ -1,5 +1,3 @@
-$color-blue : #1ea1f2;
-
 .connection {
   height: 100vh;
 }
@@ -9,7 +7,7 @@ header.myprofil {
   height: 1024px;
   background-color: #009eff;
   float: left;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container-fluid {
@@ -90,8 +88,6 @@ header.myprofil {
   }
 
   .profil {
-    padding-top: 111px;
-
     img {
       width: 80px;
       height: 80px;

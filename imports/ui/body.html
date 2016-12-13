@@ -5,9 +5,9 @@
 
 <body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-<div class="container">
 
     {{#if currentUser}}
+    <div class="container">
         <header class="myprofil">
             <img src="logo_idee.svg" alt="">
 
@@ -50,11 +50,22 @@
                 </div>
             </div>
         </div>
+        </div>
     {{else}}
-        {{> signup}}
-        {{> login}}
+        <div class="page">
+            <div class="container">
+                <div class="row align-middle">
+                    <div class="large-4 small-12 columns">
+                        <img class="logo" src="logo_idee.svg" alt="Logo idee">
+                    </div>
+                    <div class="large-6 large-push-2 small-12 columns">
+                        {{> signup}}
+                        {{> login}}
+                    </div>
+                </div>
+            </div>
+        </div>
     {{/if}}
-</div>
 </body>
 
 <template name="signup">
@@ -70,7 +81,7 @@
         <input type="email" name="signupEmail">
         <label for="signupPassword">Mot de passe</label>
         <input type="password" name="signupPassword">
-        <input type="submit" value="Je m'inscris">
+        <input type="submit" class="btn solid-white" value="Je m'inscris">
     </form>
 </template>
 
@@ -81,7 +92,7 @@
         <input type="text" name="loginEmail">
         <label for="loginPassword">Mot de passe</label>
         <input type="password" name="loginPassword">
-        <input type="submit" value="Je me connecte">
+        <input type="submit" class="btn solid-white" value="Je me connecte">
     </form>
 </template>
 

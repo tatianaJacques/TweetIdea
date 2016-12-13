@@ -1,0 +1,26 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: auto;
+    font-size: 14px;
+    border-radius: 50px;
+    outline: none;
+
+    &.solid-blue {
+        border: 1px solid $color-blue;
+        background-color: $color-blue;
+        color: white;
+    }
+
+    &.solid-white {
+        border: 1px solid white;
+        background-color: white;
+        color: $color-blue;
+    }
+
+    &.airline-blue {
+        border: 1px solid $color-blue;
+        background-color: transparent;
+    }
+}
