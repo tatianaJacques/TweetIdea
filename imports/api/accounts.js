@@ -18,7 +18,6 @@ if (Meteor.isClient) {
         password: passwordVar
       });
 
-      console.log(firstnameVar);
     }
   });
 
@@ -40,4 +39,5 @@ if (Meteor.isClient) {
       Meteor.logout();
     }
   });
+
 }
