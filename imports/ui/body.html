@@ -28,9 +28,7 @@
 
             <div class="settings">
                 <ul>
-                    <li><a href="#" class="logout">Déconnexion</a></li>
-                    <li><a href="">Réglages</a></li>
-                    <li><a href="">Aide</a></li>
+                    {{> settings}}
                 </ul>
             </div>
         </header>
@@ -85,4 +83,10 @@
         <input type="password" name="loginPassword">
         <input type="submit" value="Je me connecte">
     </form>
+</template>
+
+<template name="settings">
+    <li><a href="#" class="logout">Déconnexion</a></li>
+    <li><a href="">Réglages</a></li>
+    <li><a href="">Aide</a></li>
 </template>
