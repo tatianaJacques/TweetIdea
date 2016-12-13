@@ -1,18 +1,59 @@
+<head>
+    <title>Custom User Accounts Tutorial</title>
+</head>
+
 <body>
 <div class="container">
-    <header>
-        <h1>Les idées</h1>
-    </header>
 
-    <form class="new-idea">
-        <input type="text" name="text" placeholder="Type to add new tasks" />
-    </form>
+    {{#if currentUser}}
+        <form class="new-idea">
+            <input type="text" name="text" placeholder="Type to add new tasks" />
+        </form>
+        <ul>
+            {{#each ideas}}
+                {{> idea}}
+            {{/each}}
+        </ul>
+        {{> settings}}
+    {{else}}
+        {{> signup}}
+        {{> login}}
+    {{/if}}
 
-    <ul>
-        {{#each ideas}}
-            {{> idea}}
-        {{/each}}
-    </ul>
 </div>
 </body>
 
+<template name="signup">
+    <h2>S'inscrire</h2>
+    <form class="signup">
+        <label for="signupFirstname">Nom</label>
+        <input type="text" name="signupFirstname">
+        <label for="signupLastname">Prénom</label>
+        <input type="text" name="signupLastname">
+        <label for="signupPseudo">Pseudo</label>
+        <input type="text" name="signupPseudo">
+        <label for="signupEmail">Email</label>
+        <input type="email" name="signupEmail">
+        <label for="signupPassword">Mot de passe</label>
+        <input type="password" name="signupPassword">
+        <input type="submit" value="Je m'inscris">
+    </form>
+</template>
+
+<template name="login">
+    <h2>Se connecter</h2>
+    <form class="login">
+        <label for="loginEmail">Email</label>
+        <input type="text" name="loginEmail">
+        <label for="loginPassword">Mot de passe</label>
+        <input type="password" name="loginPassword">
+        <input type="submit" value="Je me connecte">
+    </form>
+</template>
+
+<template name="settings">
+  <p>Vous êtes loggué !</p>
+  <ul>
+      <li><a href="#" class="logout">Déconnexion</a></li>
+  </ul>
+</template>
