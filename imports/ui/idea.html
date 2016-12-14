@@ -9,8 +9,8 @@
             <span class="speudo">@{{username}}</span>
             <span class="text">{{text}}</span>
 
-            <span>note : {{currentRate}}</span>
-
+            <span>note : {{rate (nbVotes _id) currentRate}}</span>
+            
             <div class="votes">
                 <span>
                     <i class="zmdi zmdi-star-outline {{#if isNumber (votes _id) 1}}isActive{{/if}}" data-vote="1" ></i>

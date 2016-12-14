@@ -19,14 +19,20 @@ Template.idea.helpers({
     },
     isNumber(n1,n2) {
 
-        console.log('n1'+n1);
-        console.log('n2'+n2);
-
         if(n1 >= n2){
             return true
         }else{
             return false
         }
+    },
+    nbVotes(Ididea){
+
+        var votes = Votes.find({ideasId: Ididea});
+
+        return votes.count();
+    },
+    rate(nbVote,CurrentVote){
+        return CurrentVote/nbVote;
     }
 
 });
