@@ -1,7 +1,6 @@
-
 Template.login.onRendered(function () {
-  this.myRevealInstance = new Foundation.Reveal($('#login'));
-  this.myRevealInstance = new Foundation.Reveal($('#signup'));
+    this.myRevealInstance = new Foundation.Reveal($('#login'));
+    this.myRevealInstance = new Foundation.Reveal($('#signup'));
 });
 
 Template.login.onDestroyed(function () {

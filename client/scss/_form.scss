@@ -38,3 +38,9 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0px 1000px $color-blue inset;
     -webkit-text-fill-color: $white !important;
 }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

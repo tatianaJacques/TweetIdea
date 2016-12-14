@@ -10,6 +10,14 @@ header.myprofil {
   height: 100vh;
 }
 
+.myprofil {
+    .logo {
+        display: block;
+        height: 100px;
+        width: auto;
+    }
+}
+
 .container-fluid {
   float: right;
   width: calc( 100vw - 250px);
