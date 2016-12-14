@@ -1,6 +1,6 @@
 <template name="idea">
     <div class="large-4  medium-12 small-12 columns">
-        <div class="Idea-card"> <!-- ici mettre le if ceest moi-->
+        <div class="Idea-card">
 
             <button class="delete">&times;</button>
 
@@ -9,8 +9,20 @@
             <span class="speudo">@{{username}}</span>
             <span class="text">{{text}}</span>
 
+            <span>note : {{currentRate}}</span>
+
             <div class="votes">
-                <span><i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i> <i class="zmdi zmdi-star-outline"></i></span>
+                {{votesId}}
+
+                {{#each votes}}
+
+                {{/each}}
+                <span><i class="zmdi zmdi-star-outline" data-vote="1"></i>
+                    <i class="zmdi zmdi-star-outline"  data-vote="2"></i>
+                    <i class="zmdi zmdi-star-outline"  data-vote="3"></i>
+                    <i class="zmdi zmdi-star-outline"  data-vote="4"></i>
+                    <i class="zmdi zmdi-star-outline"  data-vote="5"></i>
+                </span>
             </div>
         </div>
     </div>
