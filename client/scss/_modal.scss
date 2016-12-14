@@ -66,12 +66,13 @@
 }
 
 .close {
-	background: url(../img/close.png) no-repeat;
-	height: 49px;
-	width: 49px;
 	position: absolute;
-	right: -35px;
-	top: -35px;
+	height: 44px;
+	width: 47px;
+	top: -33px;
+	right: -33px;
+	background: url(../img/close.png) no-repeat;
+	background-size: 44px 44px;
 	z-index: 9999;
 	cursor: pointer;
 	opacity: 1;
