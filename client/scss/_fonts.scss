@@ -1,0 +1,12 @@
+// FONTS //
+
+// Montserrat
+@include font-face('montserrat-light', 'Montserrat-Light', normal, 100);
+@include font-face('montserrat-regular', 'Montserrat-Regular', normal, 300);
+@include font-face('montserrat-semibold', 'Montserrat-SemiBold', normal, 700);
+@include font-face('montserrat-bold', 'Montserrat-Bold', normal, 900);
+
+// BrandonGrotesque
+@include font-face('brandongrotesque-light', 'BrandonGrotesque-Light', normal, 100);
+@include font-face('brandongrotesque-regular', 'BrandonGrotesque-Regular', normal, 300);
+@include font-face('brandongrotesque-bold', 'BrandonGrotesque-Bold', normal, 900);

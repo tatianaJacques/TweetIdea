@@ -9,7 +9,7 @@
     {{#if currentUser}}
     <div class="container">
         <header class="myprofil">
-            <img src="logo_idee.svg" alt="">
+            <img class="logo" src="img/logo_idee_v2.png" alt="">
 
             <div class="profil">
                 <img src="https://pbs.twimg.com/profile_images/808263443572789248/bH0-Kz-Y.jpg" alt="logo">
@@ -35,7 +35,7 @@
 
         <div class="container-fluid">
             <form class="new-idea">
-                <input type="text" name="text" placeholder="Type to add new tasks" />
+                <input type="text" name="text" placeholder="Tapez votre idée" />
                 <input class="btn01" type="submit">
             </form>
 
@@ -56,44 +56,55 @@
             <div class="container">
                 <div class="row align-middle">
                     <div class="large-4 small-12 columns">
-                        <img class="logo" src="logo_idee.svg" alt="Logo idee">
+                        <img class="logo" src="img/logo_idee_v2.png" alt="Logo idee">
                     </div>
                     <div class="large-6 large-push-2 small-12 columns">
-                        {{> signup}}
-                        {{> login}}
+                        <h1 class="catchphrase">Quand vos <span>idées </span><br class="hide">deviennent <span>collaborative</span></h1>
+                        <a href="#" class="btn solid white popup-button"  data-modal="signup">S'inscrire</a>
+                        <a href="#" class="btn airline white popup-button" data-modal="login">Se connecter</a>
+                            {{> signup}}
+                            {{> login}}
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
         </div>
     {{/if}}
+
 </body>
 
 <template name="signup">
-    <h2>S'inscrire</h2>
-    <form class="signup">
-        <label for="signupFirstname">Nom</label>
-        <input type="text" name="signupFirstname">
-        <label for="signupLastname">Prénom</label>
-        <input type="text" name="signupLastname">
-        <label for="signupPseudo">Pseudo</label>
-        <input type="text" name="signupPseudo">
-        <label for="signupEmail">Email</label>
-        <input type="email" name="signupEmail">
-        <label for="signupPassword">Mot de passe</label>
-        <input type="password" name="signupPassword">
-        <input type="submit" class="btn solid-white" value="Je m'inscris">
-    </form>
+    <div id="signup" class="modal blur-effect">
+        <h2>S'inscrire</h2>
+        <form class="signup">
+            <label for="signupFirstname">Nom</label>
+            <input type="text" name="signupFirstname">
+            <label for="signupLastname">Prénom</label>
+            <input type="text" name="signupLastname">
+            <label for="signupPseudo">Pseudo</label>
+            <input type="text" name="signupPseudo">
+            <label for="signupEmail">Email</label>
+            <input type="email" name="signupEmail">
+            <label for="signupPassword">Mot de passe</label>
+            <input type="password" name="signupPassword">
+            <input type="submit" class="btn solid white" value="Je m'inscris">
+        </form>
+        <div class="close"></div>
+    </div>
 </template>
 
 <template name="login">
-    <h2>Se connecter</h2>
-    <form class="login">
-        <label for="loginEmail">Email</label>
-        <input type="text" name="loginEmail">
-        <label for="loginPassword">Mot de passe</label>
-        <input type="password" name="loginPassword">
-        <input type="submit" class="btn solid-white" value="Je me connecte">
-    </form>
+    <div id="login" class="modal blur-effect">
+        <h2>Se connecter</h2>
+        <form class="login">
+            <label for="loginEmail">Email</label>
+            <input type="text" name="loginEmail">
+            <label for="loginPassword">Mot de passe</label>
+            <input type="password" name="loginPassword">
+            <input type="submit" class="btn solid white" value="Je me connecte">
+        </form>
+        <div class="close"></div>
+    </div>
 </template>
 
 <template name="settings">

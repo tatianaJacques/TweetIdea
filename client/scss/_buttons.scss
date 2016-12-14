@@ -2,25 +2,58 @@
     position: relative;
     display: inline-block;
     padding: 12px 20px;
-    margin: auto;
+    margin: 40px auto auto;
     font-size: 14px;
     border-radius: 50px;
     outline: none;
 
-    &.solid-blue {
-        border: 1px solid $color-blue;
-        background-color: $color-blue;
-        color: white;
+    + .btn {
+        margin-left: 20px;
     }
 
-    &.solid-white {
-        border: 1px solid white;
-        background-color: white;
-        color: $color-blue;
+    &.solid {
+        border: 1px solid;
+
+        &.blue {
+            background-color: $color-blue;
+            border-color: $color-blue;
+            color: $white;
+        }
+
+        &.white {
+            background-color: $white;
+            border-color: $white;
+            color: $color-blue;
+        }
+
+        &:hover {
+            background: transparent;
+            color: $white;
+        }
     }
 
-    &.airline-blue {
-        border: 1px solid $color-blue;
-        background-color: transparent;
+    &.airline {
+        border: 1px solid;
+        background: transparent;
+
+        &.blue {
+            border-color: $color-blue;
+            color: $color-blue;
+
+            &:hover {
+                background: $color-blue;
+                color: $white;
+            }
+        }
+
+        &.white {
+            border-color: $white;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $color-blue;
+            }
+        }
     }
 }

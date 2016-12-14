@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="287px" viewBox="0 0 224 287" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.321333333 286.678293 218.973333 286.678293 218.973333 0.345734884 0.321333333 0.345734884"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Test-bleu" transform="translate(-275.000000, -346.000000)">
+            <g id="logo" transform="translate(274.000000, 346.000000)">
+                <g id="cadre" transform="translate(1.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M238.773333,18.2445023 L291.192,18.2445023 L291.192,265.0974 L238.773333,265.0974 L238.773333,306.501316 L-19.4786667,306.501316 L-19.4786667,-19.4772884 L238.773333,-19.4772884 L238.773333,18.2445023 Z M20.1213333,20.1687581 L20.1213333,266.85527 L199.173333,266.85527 L199.173333,230.451353 L251.592,230.451353 L250.592,56.8905488 L198.173333,56.8905488 L199.173333,20.1687581 L20.1213333,20.1687581 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <text id="ID" font-family="AvenirNext-Heavy, Avenir Next" font-size="170" font-weight="600" line-spacing="75.24" fill="#FFFFFF">
+                    <tspan x="33.6255507" y="301.170507">ID</tspan>
+                </text>
+                <text id="E" font-family="AvenirNext-Heavy, Avenir Next" font-size="62" font-weight="600" fill="#1EA1F2">
+                    <tspan x="46" y="203">E</tspan>
+                </text>
+                <text id="E-Copy" font-family="AvenirNext-Heavy, Avenir Next" font-size="62" font-weight="600" fill="#1EA1F2">
+                    <tspan x="108" y="203">E</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

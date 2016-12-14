@@ -1,0 +1,46 @@
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    height: 25px;
+    padding: 0 0 10px 0;
+    font-family: 'brandongrotesque-light';
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid $white;
+    outline: none;
+    color: $white;
+    background: transparent;
+    box-shadow: none;
+
+    + label {
+        margin-top: 25px;
+    }
+}
+
+input[type]:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid $white;
+    background: transparent;
+    box-shadow: none;
+}
+
+label {
+    font-family: 'brandongrotesque-bold';
+    font-size: 18px;
+    color: $white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px $color-blue inset;
+    -webkit-text-fill-color: $white !important;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
