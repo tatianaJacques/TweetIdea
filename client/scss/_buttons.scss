@@ -2,10 +2,14 @@
     position: relative;
     display: inline-block;
     padding: 12px 20px;
-    margin: auto;
+    margin: 40px auto auto;
     font-size: 14px;
     border-radius: 50px;
     outline: none;
+
+    + .btn {
+        margin-left: 20px;
+    }
 
     &.solid {
         border: 1px solid;

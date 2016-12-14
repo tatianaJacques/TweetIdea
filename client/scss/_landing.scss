@@ -16,6 +16,7 @@ p {
 }
 
 .catchphrase {
+    margin-bottom: 60px;
     font-family: 'montserrat-light';
     font-size: 36px;
     color: $white;
@@ -23,10 +24,4 @@ p {
     span {
         font-family: 'montserrat-bold';
     }
-}
-
-label {
-    font-family: 'brandongrotesque-bold';
-    font-size: 18px;
-    color: $white;
 }

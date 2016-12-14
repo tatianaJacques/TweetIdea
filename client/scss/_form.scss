@@ -1,7 +1,8 @@
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    padding: 0;
+    height: 25px;
+    padding: 0 0 10px 0;
     font-family: 'brandongrotesque-light';
     font-size: 18px;
     border: 0;
@@ -10,6 +11,10 @@ input[type="password"] {
     color: $white;
     background: transparent;
     box-shadow: none;
+
+    + label {
+        margin-top: 25px;
+    }
 }
 
 input[type]:focus {
@@ -18,4 +23,10 @@ input[type]:focus {
     border-bottom: 1px solid $white;
     background: transparent;
     box-shadow: none;
+}
+
+label {
+    font-family: 'brandongrotesque-bold';
+    font-size: 18px;
+    color: $white;
 }
