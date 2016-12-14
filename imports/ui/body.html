@@ -56,12 +56,10 @@
             <div class="container">
                 <div class="row align-middle">
                     <div class="large-4 small-12 columns">
-                        <img class="logo" src="img/logo_idee.svg" alt="Logo idee">
+                        <img class="logo" src="img/logo_idee.png" alt="Logo idee">
                     </div>
                     <div class="large-6 large-push-2 small-12 columns">
                         <h1 class="catchphrase">Quand vos <span>idées </span><br class="hide">deviennent <span>collaborative</span></h1>
-                        <a href="#" class="btn solid white" data-reveal-id="modalSignup">S'inscrire</a>
-                        <a href="#" class="btn airline white" data-reveal-id="modalLogin">Se connecter</a>
                         {{> signup}}
                         {{> login}}
                     </div>
@@ -72,8 +70,10 @@
 </body>
 
 <template name="signup">
-    <div id="modalSignup" class="reveal-modal" data-reveal aria-labelledby="modalSignupLabel" aria-hidden="true" role="dialog">
-        <h2 id="modalSignupLabel">S'inscrire</h2>
+    <a href="#" class="btn solid white" data-open="signup">S'inscrire</a>
+
+    <div id="signup" class="reveal">
+        <h2>S'inscrire</h2>
         <form class="signup">
             <label for="signupFirstname">Nom</label>
             <input type="text" name="signupFirstname">
@@ -87,13 +87,17 @@
             <input type="password" name="signupPassword">
             <input type="submit" class="btn solid white" value="Je m'inscris">
         </form>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
     </div>
 </template>
 
 <template name="login">
-    <div id="modalLogin" class="reveal-modal" data-reveal aria-labelledby="modalLoginLabel" aria-hidden="true" role="dialog">
-        <h2 id="modalLoginLabel">Se connecter</h2>
+    <a href="#" class="btn airline white" data-open="login">Se connecter</a>
+
+    <div id="login" class="reveal">
+        <h2>Se connecter</h2>
         <form class="login">
             <label for="loginEmail">Email</label>
             <input type="text" name="loginEmail">
@@ -101,6 +105,9 @@
             <input type="password" name="loginPassword">
             <input type="submit" class="btn solid white" value="Je me connecte">
         </form>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
     </div>
 </template>
 

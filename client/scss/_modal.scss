@@ -1,0 +1,23 @@
+.reveal {
+    padding: 40px 25px 45px;
+    background: $color-blue;
+    outline: none;
+    border: 0;
+
+    h2 {
+        margin-bottom: 30px;
+        color: $white;
+    }
+
+    .btn {
+        float: right;
+    }
+}
+
+.close-button {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
