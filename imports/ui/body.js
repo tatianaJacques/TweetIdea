@@ -14,9 +14,21 @@ Template.body.helpers({
 });
 
 Template.idea.helpers({
-    votes(votesId) {
-        return Votes.find({owner: Meteor.userId()});
+    votes(Ididea) {
+        return Votes.findOne({owner: Meteor.userId(), ideasId: Ididea}).vote;
+    },
+    isNumber(n1,n2) {
+
+        console.log('n1'+n1);
+        console.log('n2'+n2);
+
+        if(n1 >= n2){
+            return true
+        }else{
+            return false
+        }
     }
+
 });
 
 Template.body.events({
@@ -96,6 +108,13 @@ Template.body.events({
             });
 
             var votesId = this.votesId;
+
+            var index = votesId.indexOf(voteId);
+
+            if (index > -1) {
+                votesId.splice(index, 1);
+            }
+
             votesId.push(voteIdNew);
 
             Ideas.update(this._id, {
