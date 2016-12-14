@@ -15,6 +15,13 @@ p {
     .row {
         height: 100vh;
     }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 18px;
+        color: $white;
+    }
 }
 
 .logo {

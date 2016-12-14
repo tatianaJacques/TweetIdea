@@ -4,11 +4,11 @@ input[type="password"] {
     height: 25px;
     padding: 0 0 10px 0;
     font-family: 'brandongrotesque-light';
-    font-size: 18px;
+    font-size: 20px;
     border: 0;
     border-bottom: 1px solid $white;
     outline: none;
-    color: $white;
+    color: $color-blue !important;
     background: transparent;
     box-shadow: none;
 
@@ -20,9 +20,12 @@ input[type="password"] {
 input[type]:focus {
     outline: none;
     border: 0;
+    box-shadow: none;
+}
+
+input[type]:focus:not(.btn01) {
     border-bottom: 1px solid $white;
     background: transparent;
-    box-shadow: none;
 }
 
 label {
@@ -43,4 +46,24 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
+}
+
+::-webkit-input-placeholder {
+    font-size: 20px;
+    color: $color-gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 20px;
+    color: $color-gray;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 20px;
+    color: $color-gray;
+}
+
+:-ms-input-placeholder {
+    font-size: 20px;
+    color: $color-gray;
 }
