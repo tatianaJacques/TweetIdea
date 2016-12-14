@@ -3,7 +3,7 @@ if (Meteor.isClient) {
   Template.signup.events({
     'submit form': function(event) {
       event.preventDefault();
-      
+
       var firstnameVar = event.target.signupFirstname.value;
       var lastnameVar = event.target.signupLastname.value;
       var pseudoVar = event.target.signupPseudo.value;
