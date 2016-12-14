@@ -169,6 +169,7 @@ h2 {
 
 .Ideas {
   padding-top: 71px;
+  padding-bottom: 90px;
 
   &-container {
     padding-top: 82px;
@@ -182,6 +183,7 @@ h2 {
     border-radius: 4px;
     background-color: #ffffff;
     margin-bottom: 20px;
+    padding: 10px 10px 40px 10px;
 
     display: flex;
     flex-direction: column;
@@ -232,7 +234,7 @@ h2 {
       color: #8a8b8b;
       font-size: 25px;
       position: absolute;
-      bottom: 2px;
+      bottom: 10px;
     }
   }
 }
