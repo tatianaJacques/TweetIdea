@@ -235,7 +235,11 @@ h2 {
       color: #8a8b8b;
       font-size: 25px;
       position: absolute;
-      bottom: 10px;
+      bottom: 2px;
+
+      .zmdi.isActive {
+        color: $color-blue;
+      }
     }
   }
 }
